@@ -1,0 +1,268 @@
+/* ---------- Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------- General ---------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+/* ---------- Navigation ---------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #ffffff;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #333;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* ---------- Hero Section ---------- */
+
+#hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    display: block;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* ---------- Job Search ---------- */
+
+#job-search {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#job-search input {
+    padding: 15px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#job-search button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* ---------- Featured Jobs ---------- */
+
+#jobs {
+    padding: 60px 20px;
+}
+
+#jobs h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.job-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.job-card {
+    width: 300px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.job-card a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+/* ---------- Companies ---------- */
+
+#companies {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+}
+
+#companies h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.company-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.company-card {
+    width: 280px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* ---------- About / Why SmartHire ---------- */
+
+#about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about > p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 280px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content h2 {
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+
+/* ---------- Responsive Design ---------- */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #job-search {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #job-search input {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .job-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
