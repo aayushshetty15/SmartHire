@@ -110,8 +110,8 @@ function displayJobs(jobList) {
                 ${job.salary}
             </p>
 
-            <a href="job-details.html">
-                View Job
+            <a href="job-details.html?title=${encodeURIComponent(job.title)}">
+                 View Job
             </a>
         `;
 

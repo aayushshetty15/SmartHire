@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartHire | Apply for Job</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+
+                <a href="index.html">
+                    SmartHire
+                </a>
+
+            </div>
+
+
+            <ul>
+
+                <li>
+                    <a href="index.html#jobs">
+                        Jobs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#companies">
+                        Companies
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#about">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div class="auth-buttons">
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Sign Up
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <section class="application">
+
+            <h1>
+                Apply for a Job
+            </h1>
+
+            <p>
+                Fill in your details to submit your application.
+            </p>
+            <p id="selected-job"></p>
+
+
+            <!-- Application Form -->
+
+            <form id="application-form">
+
+
+                <!-- Full Name -->
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Phone -->
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Resume -->
+
+                <div class="form-group">
+
+                    <label for="resume">
+                        Upload Resume
+                    </label>
+
+                    <input
+                        type="file"
+                        id="resume"
+                        accept=".pdf,.doc,.docx"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Cover Letter -->
+
+                <div class="form-group">
+
+                    <label for="cover-letter">
+                        Cover Letter
+                    </label>
+
+                    <textarea
+                        id="cover-letter"
+                        rows="8"
+                        placeholder="Write your cover letter..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <button type="submit">
+                    Submit Application
+                </button>
+
+
+            </form>
+
+
+            <!-- Success Message -->
+
+            <p id="success-message"></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer id="contact">
+
+        <div class="footer-content">
+
+            <h2>
+                SmartHire
+            </h2>
+
+            <p>
+                Connecting talent with opportunity.
+            </p>
+
+            <p>
+                &copy; 2026 SmartHire. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/apply.js"></script>
+
+</body>
+
+</html>
